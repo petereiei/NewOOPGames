@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{C5EF67EE-E564-C117-B9A5-F6C7B5C42C40}</ProjectGuid>
+    <ProjectGuid>{B9EFA31A-6BA1-5DF7-6E5D-E1979E66E89F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -68,11 +68,14 @@
     <Compile Include="Assets\AppGames\Script\Enemy.cs" />
     <Compile Include="Assets\AppGames\Script\HealthBar.cs" />
     <Compile Include="Assets\AppGames\Script\IPoolObject.cs" />
+    <Compile Include="Assets\AppGames\Script\LoadScore.cs" />
     <Compile Include="Assets\AppGames\Script\Model\AttackEnenyModel.cs" />
     <Compile Include="Assets\AppGames\Script\Model\PlayerModel.cs" />
     <Compile Include="Assets\AppGames\Script\PlayerMove.cs" />
+    <Compile Include="Assets\AppGames\Script\PlayerProgress.cs" />
     <Compile Include="Assets\AppGames\Script\Pooler.cs" />
     <Compile Include="Assets\AppGames\Script\Score.cs" />
+    <Compile Include="Assets\AppGames\Script\ScoreController.cs" />
     <Compile Include="Assets\AppGames\Script\SpawnerEnemy.cs" />
     <Compile Include="Assets\AppGames\Script\Spwan.cs" />
     <Compile Include="Assets\AppGames\Script\test.cs" />
@@ -102,16 +105,16 @@
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/User/Desktop/OOPGames-master/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/User/Desktop/NewOOPGames/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/User/Desktop/OOPGames-master/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/User/Desktop/NewOOPGames/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/User/Desktop/OOPGames-master/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/User/Desktop/NewOOPGames/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/User/Desktop/OOPGames-master/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/User/Desktop/NewOOPGames/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -344,7 +347,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{0F75F97F-1920-A104-7803-4DC684F45A7E}</Project>
+      <Project>{509F333C-A521-95BB-19BC-D1AF40E033E3}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>

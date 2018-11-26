@@ -13,15 +13,14 @@ namespace AppGames.Script.Controller
         private PlayerView view;
         private AttackEnemyView Attackview;
         private HealthBar healthBar;
-       // private TrollEnemy trollerEnemy;
+        // private TrollEnemy trollerEnemy;
 
         private Rigidbody rb;
-
-        private int gggg = 100;
 
         public GameObject playerModelObject;
         public GameObject playerViewObject;
         public GameObject healthBarObject;
+        public GameObject BGscoreObject;
         //public GameObject TrollEnemyObject;
 
 
@@ -32,7 +31,6 @@ namespace AppGames.Script.Controller
             model = playerModelObject.GetComponent<PlayerModel>();
             view = playerViewObject.GetComponent<PlayerView>();
             healthBar = healthBarObject.GetComponent<HealthBar>();
-
 
             healthBar.SetHealth(model.hp);
             Debug.Log("HP Player : " + model.hp);
@@ -79,6 +77,12 @@ namespace AppGames.Script.Controller
                 {
                     TakeDamage();
                 }
+                else if (model.hp <= 0)
+                {
+                    Debug.Log("Save");
+                    BGscoreObject.SetActive(true);
+                    SubmitNewPlayerScore(Score.score);
+                }
             }
         }
 
@@ -106,6 +110,19 @@ namespace AppGames.Script.Controller
             view.GetComponent<Rigidbody>().AddForce(new Vector3(0.0f, 0.0f, 55f));
         }
 
+        public void SubmitNewPlayerScore(int newScore)
+        {
+            if (newScore > model.highestScore)
+            {
+                model.highestScore = newScore;
+                SavePlayerProgress();
+            }
+        }
+
+        private void SavePlayerProgress()
+        {
+            PlayerPrefs.SetInt("highestScore", model.highestScore);
+        }
     }
 }
 

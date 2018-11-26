@@ -16,6 +16,9 @@ namespace AppGames.Script.Model
 
         public float MaxSpeed = 10f;
         public int DamageAmount = 10;
+
+        public int highestScore = 0;
+
         /*
         public int Health
         {

@@ -1,2 +1,4 @@
 C:\Users\User\Desktop\OOPGames\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
 C:\Users\User\Desktop\OOPGames\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\NewOOPGames\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\User\Desktop\NewOOPGames\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
